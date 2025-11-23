@@ -1,0 +1,82 @@
+Django Back End শুরু, টুলস, প্রজেক্ট,অ্যাপ, কনফিগারেশন, সেটআপ-রিসেটাপ
+Date 22 Nov
+=============================================================
+1. WHAT IS DJANGO
+2. DJANGO Stable
+3. First Look
+    - manage.py
+    - templates
+    - DjangoProject1 (Project)
+        - __init__.py
+        - ASGI config (Asynchronous)
+        - wsgi.py (synchronous)
+        - settings.py
+        - urls -> default /admin
+
+4. Lets Run Django Run
+5. Initial Interface
+6. Django Admin
+7. Virtual Environment (.venv/venv)
+8. Create Package Defination Files
+    - pip freeze > requirements.txt
+
+9. Re-Create Virtual Environment (.venv/venv)
+    - python -m venv venv
+    - python -m venv .venv
+
+10. Re- install packages
+    - pip install -r requirements.txt
+
+
+11. How To Active venv
+    - Windows: .venv\Scripts\activate
+    - Linux/macOS: source .venv/bin/activate
+
+12. Run Project Again
+    - python manage.py runserver
+
+13. How to Run Initial Migration
+    - python manage.py migrate
+
+14. Lets Create a Django App
+    - python manage.py startapp myapp
+
+15. Connect app with settings
+    - INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'myapp'
+]
+
+16. Configure Settings and URLs
+    - Create new urls.py inside your project
+    - urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',include('myapp.urls'))
+]
+
+17. What inside myapp
+    - migrations
+    - __init__.py
+    - admin.py
+    - apps config
+    - models
+    - tests
+    - urls.py
+    - views-> Request Response
+
+18. Create Your First Request-Response In Django
+19. Render Your First HTML Template With Views
+
+20. Pycharm Config
+
+21. Debug Process
+
+
+Django টেমপ্লেট মাস্টারি, ফিল্টার, ট্যাগ, কম্পোনেন্ট ও লে-আউট আর্কিটেকচার
+Date 25 Nov
+=============================================================
